@@ -1,3 +1,20 @@
 What happens when you initialize a repository? Why do you need to do it?
 When a repository is initialized it sets up the required metadata for git functions. It creates a .git folder and from then on git commands 
 can be triggered. This makes sense when git environment is set up for a new repository not cloned from others. 
+
+How can you use the staging area to make sure you have one commit per logical change?
+Staging area is a placeholder where the files are staged which are relevant for a logical unit of functionality. With this comparisons can be done between working directory v/s staging and staging v/s repository. The developer can use staging area as a double reassurance before commit is made.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Master Branch could be the main shipment track where objects are kept clean and stable. Branches can be created to prototype new features, redesign or a major bug fix and treated and scrutinized separately before being merged into the master. Branches help in trying out different approaches to a problem. Thus a degree of independence is achieved with branching, which would have been difficult in case of a single branch due to locks.
+
+How do the diagrams help you visualize the branch structure?
+It tells me about the commit trail, the reachable paths and the unreachable commits.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+Brings the changes done in two different branches into a single branch thus unifying two development tracks. It helps in visualizing the fork of branches from master and then the merge onto master helping understand the concept in a much better way.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+It is very similar to correction workbench in ABAP, where there are no conflicts with contexts from two branches automatic works fine,
+thus increasing productivity. Whenever there is a conflict the owners of the objects decide how the conflict should be handled and the merge
+executed.
